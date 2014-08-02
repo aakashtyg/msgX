@@ -11,18 +11,18 @@
     </head>
     <body>
 
-        
         <div id="mainForm">
-        <form>
-            Username: <input type="text" name=""><br>
-            &nbspPassword: <input type="password" name=""><br>
-            <br>
-        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="submit" name="">     
-        </form> 
-        </div>
-        <div id="mainContent">
-        
-        </div>
+         <form method="POST" action=""> {% csrf_token %}
+             {{ form.as_p}}
+             Username: <input type="text" name=""><br>
+             &nbspPassword: <input type="password" name=""><br>
+             <br>
+         <input type="submit" name="">     
+         </form> 
+         </div>
+         <div id="mainContent">
+         
+         </div>
     
     </body>
 </html>
